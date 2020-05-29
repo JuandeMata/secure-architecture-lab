@@ -17,7 +17,7 @@ public class Controller {
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> response
                 = restTemplate.getForEntity(url, String.class);
-        return response.getBody();
+        return response.getBody() + "hello world";
     }
 
 }
